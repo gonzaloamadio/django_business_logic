@@ -1,0 +1,15 @@
+# Local development dependencies go here
+-r base.txt
+
+django-debug-toolbar
+ipdb
+flake8
+coverage
+django-rest-swagger
+httpie
+django-test-without-migrations
+Sphinx
+sphinx-rtd-theme
+numpydoc
+pytest
+pytest-django 

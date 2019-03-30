@@ -1,0 +1,13 @@
+# Test dependencies go here.
+-r base.txt
+
+coverage==3.7.1
+factory_boy==2.5.2
+django-rest-swagger
+httpie
+django-test-without-migrations
+Sphinx
+sphinx-rtd-theme
+numpydoc
+pytest
+pytest-django 
