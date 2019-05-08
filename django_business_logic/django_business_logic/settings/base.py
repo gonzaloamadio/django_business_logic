@@ -170,7 +170,7 @@ PASSWORD_HASHERS = (
 
 ########## END PASSWORD VALIDATION CONFIGURATION
 
-ROOT_URLCONF = 'tektank.urls'
+ROOT_URLCONF = 'django_business_logic.urls'
 
 
 DJANGO_APPS = (
@@ -200,6 +200,7 @@ THIRD_PARTY_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
+    'django_business_logic.apps.posts.apps.PostsConfig',
 )
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
@@ -234,7 +235,7 @@ def gen_secret_key(numero):
 #everything fails, then just raise an exception.
 try:
     #SECRET_KEY = open(SECRET_FILE).read().strip()
-    SECRET_KEY ="adasda3453454trgsfjdkfnisuhidahd87t67y8a7"
+    SECRET_KEY ="adasda3453454taadasasdasdas"
 except IOError:
     try:
         with open(SECRET_FILE, 'w') as f:
@@ -385,5 +386,3 @@ LOGGING = {
     }
 }
 
-
-WSGI_APPLICATION = 'tektank.wsgi.application'
